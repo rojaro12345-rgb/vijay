@@ -30,14 +30,12 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    ><script type="application/ld+json">
+  <!-- 1. Beauty Salon Local Business Schema -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BeautySalon",
   "name": "Viyash Women’s Beauty Salon",
-  "description": "Professional women’s beauty salon offering haircuts, makeup, skincare, manicure, pedicure, massage and beauty services.",
-  "url": "https://www.yourwebsite.com",
-  "image": "https://www.yourwebsite.com/img/about.jpg",
   "telephone": "+91 6383631657",
   "email": "rojaro12345@gmail.com",
   "address": {
@@ -45,56 +43,182 @@
     "streetAddress": "123 Street",
     "addressLocality": "Ariyalur",
     "addressRegion": "Tamil Nadu",
-    "addressCountry": "IN"
+    "addressCountry": "India"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Ariyalur"
+  "priceRange": "₹₹"
+}
+</script>
+
+<!-- 2. Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Viyash Women’s Beauty Salon",
+  "url": "https://yourwebsite.com",
+  "logo": "https://yourwebsite.com/img/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+916383631657",
+    "contactType": "Customer Service"
+  }
+}
+</script>
+
+<!-- 3. Website Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Viyash Women’s Beauty Salon",
+  "url": "https://yourwebsite.com",
+  "description": "Professional beauty salon offering haircuts, makeup, skincare, manicure, pedicure and massage services."
+}
+</script>
+
+<!-- 4. WebPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Viyash Women’s Beauty Salon Home Page",
+  "url": "https://yourwebsite.com",
+  "description": "Best women’s beauty salon offering complete beauty care services."
+}
+</script>
+
+<!-- 5. Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Beauty Services",
+  "provider": {
+    "@type": "BeautySalon",
+    "name": "Viyash Women’s Beauty Salon"
   },
-  "priceRange": "₹₹",
-  "openingHours": "Mo-Su 09:00-20:00",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Beauty Services",
+    "name": "Salon Services",
     "itemListElement": [
       {
         "@type": "Service",
-        "name": "Haircut",
-        "description": "Professional women and children haircut and styling services."
+        "name": "Haircut"
       },
       {
         "@type": "Service",
-        "name": "Makeup",
-        "description": "Professional makeup services for different occasions."
+        "name": "Makeup"
       },
       {
         "@type": "Service",
-        "name": "Manicure",
-        "description": "Nail care and hand beauty treatments."
+        "name": "Skin Care"
       },
       {
         "@type": "Service",
-        "name": "Pedicure",
-        "description": "Foot care, cleansing and relaxation treatments."
+        "name": "Manicure"
       },
       {
         "@type": "Service",
-        "name": "Massage",
-        "description": "Relaxing body massage and wellness treatments."
+        "name": "Pedicure"
       },
       {
         "@type": "Service",
-        "name": "Skin Care",
-        "description": "Personalized skincare and beauty treatments."
+        "name": "Massage"
       }
     ]
-  },
-  "sameAs": [
-    "https://www.facebook.com/your-page",
-    "https://www.instagram.com/your-page"
+  }
+}
+</script>
+
+<!-- 6. FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does Viyash Beauty Salon provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide haircuts, makeup, skincare, manicure, pedicure and massage services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Viyash Beauty Salon located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Viyash Beauty Salon is located in Ariyalur, Tamil Nadu, India."
+      }
+    }
   ]
 }
-</script>    
+</script>
+
+<!-- 7. Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://yourwebsite.com"
+    }
+  ]
+}
+</script>
+
+<!-- 8. Image Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "contentUrl": "https://yourwebsite.com/img/about.jpg",
+  "name": "Viyash Beauty Salon",
+  "description": "Professional beauty salon services for women."
+}
+</script>
+
+<!-- 9. Team Member Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Lily Taylor",
+  "jobTitle": "Hair Specialist",
+  "worksFor": {
+    "@type": "BeautySalon",
+    "name": "Viyash Women’s Beauty Salon"
+  }
+}
+</script>
+
+<!-- 10. Customer Review Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": "Sinthara"
+  },
+  "reviewBody": "The staff is highly professional and the service exceeded my expectations.",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "itemReviewed": {
+    "@type": "BeautySalon",
+    "name": "Viyash Women’s Beauty Salon"
+  }
+}
+</script>
+
 </head>
 
 <body>
